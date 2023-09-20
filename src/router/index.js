@@ -40,8 +40,8 @@ export const constantRoutes = [
   {
     path: '/',
     component: Layout,
-    // redirect: '/dashboard',
-    redirect: '/system/accountBook', //登录后默认跳转到账单的页面
+    redirect: '/dashboard',
+    // redirect: '/system/accountBook', //登录后默认跳转到账单的页面
     children: [{
       path: 'dashboard',
       name: 'Dashboard',

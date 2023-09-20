@@ -38,7 +38,7 @@ module.exports = {
     },
     // before: require('./mock/mock-server.js')
     // 下面这个是dev开发环境的配置
-    proxy: {
+    /* proxy: {
       '/dev-api': { // 匹配所有以 '/dev-api'开头的请求路径
         target: 'http://localhost:8888',
         changeOrigin: true, // 支持跨域
@@ -46,8 +46,8 @@ module.exports = {
           '^/dev-api': ''
         }
       }
-    }
-    /* //下面的这个是生产环境里面的配置
+    } */
+    //下面的这个是生产环境里面的配置
     proxy: {
       '/prod-api': { // 匹配所有以 '/dev-api'开头的请求路径
         target: 'http://localhost:8888',
@@ -56,7 +56,7 @@ module.exports = {
           '^/prod-api': ''
         }
       }
-    } */
+    }
     // 下面的这个是生产环境里面的配置
     /* proxy: {
       '/prod-api': { // 匹配所有以 '/dev-api'开头的请求路径
